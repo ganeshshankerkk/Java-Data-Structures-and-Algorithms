@@ -6,3 +6,5 @@ Data structures and algorithms implemented in Java with explanations.
 - Array
 - Array List
 - Linked List
+  - Singly Linked List
+  - Circular Singly Linked List
