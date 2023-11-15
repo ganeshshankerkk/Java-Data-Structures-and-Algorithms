@@ -24,7 +24,7 @@ public class SinglyLinkedList {
      * Time Complexity - O(N)
      * Space Complexity - O(1)
      *
-     * @param nodeValue - Value of the note
+     * @param nodeValue - Value of the node
      * @param location  - location at which the node to be created
      */
     public void insert(int nodeValue, int location) {
@@ -106,8 +106,8 @@ public class SinglyLinkedList {
 
     /**
      * Deleting a node from singly linked list
-     * Time Complexity -
-     * Space Complexity -
+     * Time Complexity - O(N)
+     * Space Complexity - O(1)
      *
      * @param location - location of the node to be deleted
      */
