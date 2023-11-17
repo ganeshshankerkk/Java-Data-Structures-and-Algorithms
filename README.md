@@ -8,3 +8,4 @@ Data structures and algorithms implemented in Java with explanations.
 - Linked List
   - Singly Linked List
   - Circular Singly Linked List
+  - Doubly Linked List
