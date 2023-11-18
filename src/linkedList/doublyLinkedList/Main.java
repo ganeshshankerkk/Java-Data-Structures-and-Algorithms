@@ -9,15 +9,15 @@ public class Main {
         System.out.println("Head value: "+doublyLinkedList.head.value);
         System.out.println("Tail value: "+doublyLinkedList.tail.value);
 
-        doublyLinkedList.create(4, 0);
-        doublyLinkedList.create(5, 0);
-        doublyLinkedList.create(6, 0);
-        doublyLinkedList.create(10, 3);
+        doublyLinkedList.insert(4, 0);
+        doublyLinkedList.insert(5, 0);
+        doublyLinkedList.insert(6, 0);
+        doublyLinkedList.insert(10, 3);
         doublyLinkedList.traverse();
         System.out.println("doublyLinkedList Size: " + doublyLinkedList.size);
 
-        doublyLinkedList.create(12, 13);
-        doublyLinkedList.create(23, 133);
+        doublyLinkedList.insert(12, 13);
+        doublyLinkedList.insert(23, 133);
         doublyLinkedList.traverse();
         System.out.println("doublyLinkedList Size: " + doublyLinkedList.size);
 

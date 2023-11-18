@@ -35,7 +35,7 @@ public class DoublyLinkedList {
      * @param nodeValue value of the node
      * @param location  location where the node to be inserted
      */
-    public void create(int nodeValue, int location) {
+    public void insert(int nodeValue, int location) {
         Node node = new Node(); //O(1)
         node.value = nodeValue; //O(1)
         if (this.head == null) { //O(1)
