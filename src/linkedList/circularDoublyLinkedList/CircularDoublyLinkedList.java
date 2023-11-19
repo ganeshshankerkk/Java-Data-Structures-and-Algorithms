@@ -80,7 +80,7 @@ public class CircularDoublyLinkedList {
      * Space Complexity - O(1)
      */
     public void traverse() {
-        if (head != null) { // O(1)
+        if (this.head != null) { // O(1)
             Node tempNode = this.head; // O(1)
             for (int i = 0; i < this.size; i++) { // O(N)
                 System.out.print(tempNode.value); // O(1)
@@ -103,7 +103,7 @@ public class CircularDoublyLinkedList {
      * Space Complexity - O(1)
      */
     public void reverseTraverse() {
-        if (head != null) { // O(1)
+        if (this.head != null) { // O(1)
             Node tempNode = this.tail; // O(1)
             for (int i = 0; i < this.size; i++) { // O(N)
                 System.out.print(tempNode.value); // O(1)
@@ -118,4 +118,104 @@ public class CircularDoublyLinkedList {
         }
     }
 
+    /**
+     * Linear search implementation
+     * Time Complexity - O(N)
+     * Space Complexity - O(1)
+     *
+     * @param nodeValue
+     */
+    public void search(int nodeValue) {
+        if (this.head != null) {// O(1)
+            Node tempNode = this.head;// O(1)
+            for (int i = 0; i < this.size; i++) {// O(N)
+                if (tempNode.value == nodeValue) {// O(1)
+                    System.out.println("Found node value " + nodeValue + " at index " + i); //O(1)
+                    return;
+                }
+                tempNode = tempNode.next;// O(1)
+            }
+            System.out.println("Node not found with element " + nodeValue); // O(1)
+        } else {
+            System.out.println("Circular doubly linked list does not exist!"); // O(1)
+        }
+    }
+
+    /**
+     * <p>
+     * Delete node from the given location
+     * </p>
+     * Time Complexity - O(N)
+     * Space Complexity - O(1)
+     *
+     * @param location - location of the node to be deleted
+     */
+    public void delete(int location) {
+        if (this.head != null) { // O(1)
+            if (location == 0) { // O(1)
+                //If there is only one node
+                if (this.size == 1) { // O(1)
+                    this.head.prev = null;
+                    this.head.next = null;
+                    this.head = this.tail = null; // O(1)
+                    this.size--; // O(1)
+                    return;
+                }
+                //If there are multiple nodes
+                this.head = this.head.next; // O(1)
+                this.head.prev = this.tail; // O(1)
+                this.tail.next = this.head; // O(1)
+                this.size--; // O(1)
+            } else if (location >= this.size) { // O(1)
+                //If there is only one node
+                if (this.size == 1) { // O(1)
+                    this.head.prev = null;
+                    this.head.next = null;
+                    this.head = this.tail = null; // O(1)
+                    this.size--; // O(1)
+                    return;
+                } else {
+                    //If there are multiple nodes
+                    this.tail = this.tail.prev; // O(1)
+                    this.tail.next = this.head; // O(1)
+                    this.head.prev = this.tail; // O(1)
+                    this.size--;
+                }
+            } else {
+                Node tempNode = this.head; // O(1)
+                for (int i = 0; i < location - 1; i++) { // O(N)
+                    tempNode = tempNode.next; // O(1)
+                }
+                tempNode.next = tempNode.next.next; // O(1)
+                tempNode.next.prev = tempNode; // O(1)
+                this.size--; // O(1)
+            }
+        } else {
+            System.out.println("Circular doubly linked list does not exist!"); // O(1)
+        }
+    }
+
+    /**
+     * <p>
+     * Delete entire doubly linked list.
+     * Require head and tail reference to point to null and
+     * previous reference of all nodes to null to break the
+     * connection between nodes and make nodes available
+     * for garbage collection
+     * </p>
+     * Time Complexity - O(N)
+     * Space Complexity - O(1)
+     */
+    public void deleteEntireCircularDoublyLinkedList() {
+        if (head != null) { // O(1)
+            Node tempNode = this.head; // O(1)
+            for (int i = 0; i < this.size; i++) { // O(N)
+                tempNode.prev = null; // O(1)
+                tempNode = tempNode.next; // O(1)
+            }
+            this.head = this.tail = null; // O(1)
+        } else {
+            System.out.println("Doubly linked list does not exist!"); // O(1)
+        }
+    }
 }

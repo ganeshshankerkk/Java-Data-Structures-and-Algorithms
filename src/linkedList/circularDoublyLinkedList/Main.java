@@ -15,5 +15,19 @@ public class Main {
         //Traversal
         circularDoublyLinkedList.traverse();
         circularDoublyLinkedList.reverseTraverse();
+
+        //Search
+        circularDoublyLinkedList.search(10);
+        circularDoublyLinkedList.search(11);
+
+        //Deletion
+        circularDoublyLinkedList.delete(0);
+        circularDoublyLinkedList.traverse();
+        circularDoublyLinkedList.reverseTraverse();
+
+        //Delete entire list
+        circularDoublyLinkedList.deleteEntireCircularDoublyLinkedList();
+        circularDoublyLinkedList.traverse();
+        circularDoublyLinkedList.reverseTraverse();
     }
 }
