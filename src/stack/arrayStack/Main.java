@@ -1,4 +1,4 @@
-package src.stack.ArrayStack;
+package src.stack.arrayStack;
 
 public class Main {
     public static void main(String[] args) {

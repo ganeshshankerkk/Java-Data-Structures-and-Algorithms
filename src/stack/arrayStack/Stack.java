@@ -1,4 +1,4 @@
-package src.stack.ArrayStack;
+package src.stack.arrayStack;
 
 /**
  * Stack creation using Arrays
