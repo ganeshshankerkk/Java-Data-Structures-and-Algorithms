@@ -10,3 +10,4 @@ Data structures and algorithms implemented in Java with explanations.
   - Circular Singly Linked List
   - Doubly Linked List
   - Circular Doubly Linked List
+- Stack
