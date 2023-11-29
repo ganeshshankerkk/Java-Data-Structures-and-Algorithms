@@ -12,4 +12,7 @@ Data structures and algorithms implemented in Java with explanations.
   - Circular Doubly Linked List
 - Stack
   - Stack using Array
-  - Stack using Singly Linked List 
+  - Stack using Singly Linked List
+- Queue
+  - Queue using Array
+      - Linear Queue
