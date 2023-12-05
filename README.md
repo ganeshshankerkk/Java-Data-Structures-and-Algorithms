@@ -16,3 +16,4 @@ Data structures and algorithms implemented in Java with explanations.
 - Queue
   - Queue using Array
       - Linear Queue
+      - Circular Queue
