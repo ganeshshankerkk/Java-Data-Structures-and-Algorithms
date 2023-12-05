@@ -1,4 +1,4 @@
-package src.queue.queueArray;
+package src.queue.linearQueueArray;
 
 public class Main {
     public static void main(String[] args) {
