@@ -1,4 +1,4 @@
-package src.queue.problems.multipleStacksInOneArray;
+package src.stack.problems.multipleStacksInOneArray;
 
 public class Main {
     public static void main(String[] args) {

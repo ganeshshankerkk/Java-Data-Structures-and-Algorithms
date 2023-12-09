@@ -1,4 +1,4 @@
-package src.queue.problems.multipleStacksInOneArray;
+package src.stack.problems.multipleStacksInOneArray;
 
 /**
  * use a single Array to implement N stacks.
